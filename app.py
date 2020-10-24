@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-PAGINATION_COUNT = 1000
+PAGINATION_COUNT = 100
+
 
 def get_soup(page_number):
     response = requests.get("https://stackoverflow.com/questions?tab=newest&page=" + str(page_number))
